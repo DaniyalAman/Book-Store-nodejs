@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page-2">
+    <form action="/register" method="post">
+               <h1>Register Book:-</h1> 
+       <input name="Book_Id" type="number" placeholder="Book_Id">
+        <br> <br>
+       <input name="Book_name" type="name" placeholder="Book name">
+        <br> <br>
+     <input name="Author_name" type="name" placeholder="Author name">
+        <br> <br>
+      <textarea name="Description" id="text" cols="20" rows="5" placeholder="Description"></textarea>
+        <br> <br>
+      <input name="Pages" type="number"placeholder="pages">
+        <br> <br>
+       <select name="Year" id="">
+            <option value="year">year</option>
+            <br> <br>
+            <option value="2010">2010</option>
+            <br> <br>
+            <option value="2015">2015</option>
+            <br> <br>
+            <option value="2020">2020</option>
+            <br> <br>
+            <option value="2022">2022</option>
+        </select>
+        <br> <br>
+        <input name="prize" type="number" placeholder="prize">
+        <br> <br>
+        <button>Register Book</button>
+    </form>  
+</div>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      width: 100vw;
+      height: 100vh;
+    }
+    #page-2{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1516663713099-37eb6d60c825?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60");
+        background-size: cover;
+        background-position: center;  
+    }
+    form{
+        position: relative;
+        background-color:rgba(255, 255, 255, 0.423);
+        width: fit-content;
+        height: 80vh;
+        padding: 10px 30px;
+        left: 41%;
+        top: 10%;
+        border-radius: 5px; 
+    }
+    input{
+        padding: 3px 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    select{
+        padding: 3px 5px;
+        border-radius: 10px;
+        
+    }
+    
+    </style>
+</body>
+</html>

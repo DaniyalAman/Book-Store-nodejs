@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <ol>
+        <h1>
+            This is show page:-
+            </h1>
+        <h2>
+    <% book.forEach(function(ele , index){ %>
+       Book_Id: <%= ele.Book_Id %>
+        <br> <br>
+        Book_name: <%= ele.Book_name %>
+        <br> <br>
+       Author_name: <%= ele.Author_name %>
+        <br> <br>
+       Description: <%= ele.Description %>
+         <br> <br>
+       pages: <%= ele.page %>
+         <br> <br>
+       Year: <%= ele.Year %>
+        <br> <br>
+       prize: <%= ele.prize %>
+         <br> <br>
+        <a href="/Detail/<%= index %>">Explore More</a>
+   <% }) %>
+</h2>
+</ol>
+
+<style>
+    
+
+    
+</style>
+
+</body>
+</html>

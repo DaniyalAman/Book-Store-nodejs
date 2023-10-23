@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Book Details:-</h1>
+    <h2> 
+        Book_Id <%= book.Book_Id %>
+        <br> <br>
+        Book_name <%= book.Book_name %>
+        <br> <br>
+        Author_name <%= book.Author_name %>
+        <br>
+        Book_Description <%= book.Description %>
+        <br>
+        Pages <%= book.Pages %>
+        <br>
+     </h2>
+     <a href="/delete/<%= index %>">delete</a>
+     <a href="/update/<%= index %>">update</a>
+     <hr>
+     
+   
+</body>
+</html>

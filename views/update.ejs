@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page4">
+    <form action="/update/:index" method="post">
+        <h1>Update Book:-</h1> 
+         <br>
+        <input disabled value="<%= book.Book_Id %>" name ="Book_Id" type="number" placeholder="Book_Id">
+        <br> <br>
+        <input value="<%= book.Book_name %>" name="Book_name" type="name" placeholder="Book name">
+        <br> <br>
+        <input value="<%= book.Author_name %>" name="Author_name" type="name" placeholder="Author name">
+        <br> <br>
+        <textarea  name="Description" id="text" cols="20" rows="5"  placeholder="Description"value="<%= book.Description %>"></textarea>
+        <br> <br>
+        <input value="<%= book.Pages %>" name="Pages" type="number"placeholder="pages">
+        <br> <br>
+        <select  name="Year"  id=""   >
+            <option value="year">year</option>
+            <br> <br>
+            <option value="2010">2010</option>
+            <br> <br>
+            <option value="2015">2015</option>
+            <br> <br>
+            <option value="2020">2020</option>
+            <br> <br>
+            <option value="2022">2022</option>
+        </select>
+        <br> <br>
+        <input value="<%= book.prize %>" name="prize" type="number" placeholder="prize">
+        <br> <br>
+        <button>Register Book</button>
+    </form>
+</div>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100vw;
+        height: 100vh;
+    }
+    #page4{
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    form{
+        width: fit-content;
+        height: 74vh;
+        background-color: rgba(255, 0, 0, 0.099);
+        padding: 23px 30px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    input{
+        padding: 3px;
+        border-radius: 20px;
+        border: none;
+        background-color: transparent;
+      
+    }
+    button{
+        border-radius: 10px;
+        padding: 3px;
+        background-color: rgb(44, 169, 169);
+    }
+    select{
+        padding: 3px;
+        border-radius: 10px;
+        border: none;
+        
+    }
+</style>
+    
+</body>
+</html>
